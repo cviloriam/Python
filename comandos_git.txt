@@ -1,0 +1,223 @@
+🚀 DESPUÉS DE LIMPIAR: WORKFLOW COMPLETO
+Tu flujo de trabajo ya está funcionando perfectamente:
+
+# ============================================
+# CICLO DE DESARROLLO COMPLETO
+# ============================================
+
+# 1. CREAR FEATURE
+$ git checkout dev
+$ git pull origin dev
+$ git checkout -b feature/nueva-funcionalidad
+
+# 2. TRABAJAR
+# (editar archivos, programar...)
+$ git add .
+$ git commit -m "feat: descripción del cambio"
+
+# 3. TERMINAR FEATURE
+$ git checkout dev
+$ git merge feature/nueva-funcionalidad
+$ git branch -d feature/nueva-funcionalidad
+$ git push origin dev
+
+# 4. CREAR PR EN GITHUB
+# Ve a: https://github.com/cviloriam/Python/compare/main...dev
+# Click "Create pull request"
+# Revisar cambios
+# Click "Merge pull request"
+
+# 5. ACTUALIZAR LOCAL
+$ git checkout main
+$ git pull origin main
+
+# 6. SINCRONIZAR DEV CON MAIN
+$ git checkout dev
+$ git merge main
+$ git push origin dev
+
+# ============================================
+# OPCIONAL: CREAR TAG/RELEASE
+# ============================================
+
+$ git checkout main
+$ git tag -a v1.0.0 -m "Primera versión estable"
+$ git push origin v1.0.0
+
+🏷️ CONVENCIONES QUE YA ESTÁS USANDO:
+feat		:     Nueva funcionalidad ✅ (ya lo usaste)
+fix			:      Corrección de bug
+docs		:     Documentación
+style		:    Formato
+refactor	: Refactorización
+test		:     Tests
+chore		:    Mantenimiento
+
+# Ejemplos:
+git commit -m "feat: añadir validación de timestamp"
+git commit -m "fix: corregir formato de fecha"
+git commit -m "docs: actualizar README con ejemplos"
+git commit -m "refactor: simplificar función de conversión"
+git commit -m "test: añadir tests unitarios"
+git commit -m "chore: actualizar dependencias"
+
+📊 COMANDOS ÚTILES PARA EL DÍA A DÍA:
+# Ver estado actual
+git status
+
+# Ver historial bonito
+git log --oneline --graph --all --decorate
+
+# Ver diferencias entre ramas
+git diff main dev
+
+# Ver qué archivos cambiaron
+git diff --name-only main dev
+
+# Ver branches con último commit
+git branch -v
+
+# Ver branches remotas
+git branch -r
+
+# Limpiar branches eliminadas remotamente
+git fetch --prune
+
+# Ver cambios sin hacer commit
+git diff
+
+# Ver cambios staged
+git diff --staged
+
+🎯 EJECUTA AHORA LA LIMPIEZA:
+git checkout dev
+git merge main
+git push origin dev
+git log --oneline --graph --all
+
+🎊 ¡FELICIDADES!
+Ya tienes:
+
+✅ Git Flow funcionando correctamente
+✅ Pull Requests obligatorios en main
+✅ Protecciones de rama configuradas
+✅ Tu primer PR exitoso (#1)
+✅ Flujo de trabajo profesional
+
+Curso Git:
+https://www.youtube.com/watch?v=VdGzPZ31ts8
+
+
+
+Esto es como iniciamos:
+
+1. Instalamos la herramienta git pero previamente lo descargamos desde la web oficial:
+
+	https://git-scm.com/
+
+2. Luego ingresamos la app Git Bash y configuramos nuestras primeras variables globales de nombre de usuario y correo:
+
+	cvilo@LAP-ASUS-ROG MINGW64 ~
+	$ git --version
+	git version 2.51.0.windows.2
+
+	cvilo@LAP-ASUS-ROG MINGW64 ~
+	$ git config --global user.name "cviloriam"
+
+	cvilo@LAP-ASUS-ROG MINGW64 ~
+	$ git config --global user.email "cviloriam@gmail.com"
+
+	cvilo@LAP-ASUS-ROG MINGW64 ~
+	$ git config --list
+	diff.astextplain.textconv=astextplain
+	filter.lfs.clean=git-lfs clean -- %f
+	filter.lfs.smudge=git-lfs smudge -- %f
+	filter.lfs.process=git-lfs filter-process
+	filter.lfs.required=true
+	http.sslbackend=schannel
+	core.autocrlf=true
+	core.fscache=true
+	core.symlinks=false
+	pull.rebase=false
+	credential.helper=manager
+	credential.https://dev.azure.com.usehttppath=true
+	init.defaultbranch=master
+	core.editor="C:\Program Files\Microsoft VS Code\bin\code" --wait
+	user.name=cviloriam
+	user.email=cviloriam@gmail.com
+
+	cvilo@LAP-ASUS-ROG MINGW64 ~
+	$
+
+Nota: en este momento podemos cerrar la app de Git Bash.
+
+3. Ahora nos vamos a la carpeta local donde queremos crear nuestro primer repositorio:
+	Ejemplo:
+	G:\My Drive\1.Devs\Code\Python\Samples\Timestamp
+
+4. Creamos el primer archivo (incluyendo su contenido correspondiente) que deseamos cargar al repositorio:
+	Ejemplo: 
+	hola_mundo.py
+	
+5. Ahora click derecho dentro de la carpeta sin seleccionar ningún archivo y click en Open Git Bash Here
+
+6. Ahora digitamos el comando Git Init para inicializar nuestro repositorio:
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp
+	$ git init
+	Initialized empty Git repository in G:/My Drive/1.Devs/Code/Python/Samples/Timestamp/
+	.git/
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$
+
+7. Si queremos abrir la carpeta con visual studio code escribimos ahora code . y enter:
+	
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ code .
+
+8. Luego de ver el contenido de mi repositorio en mi local, cierro el visual studio code y ahora nos devolvemos al git bash y ejecutamos los siguientes comandos:
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git status
+	On branch master
+
+	No commits yet
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+			hola_mundo.py
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git add .
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git commit -m "Primer commit"
+	[master (root-commit) b9a61f0] Primer commit
+	 1 file changed, 1 insertion(+)
+	 create mode 100644 hola_mundo.py
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git commit status
+	error: pathspec 'status' did not match any file(s) known to git
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git status
+	On branch master
+	nothing to commit, working tree clean
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git log
+	commit b9a61f0a256cb9662c3521a65527d1b7c795cfb4 (HEAD -> master)
+	Author: cviloriam <cviloriam@gmail.com>
+	Date:   Tue Nov 4 22:53:46 2025 -0500
+
+		Primer commit
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$ git remote add origin https://github.com/cviloriam/Python.git
+
+	cvilo@LAP-ASUS-ROG MINGW64 /g/My Drive/1.Devs/Code/Python/Samples/Timestamp (master)
+	$
