@@ -21,7 +21,7 @@ Dependencias:
 # IMPORTACIONES
 # ============================================
 # (Todas las importaciones deben ir aquí, al inicio del script)
-from medir_tiempo import medir_tiempo
+from cv02_medir_tiempo import medir_tiempo
 import time
 
 # ============================================
@@ -36,7 +36,8 @@ print("\nInicio...(V)")
 medir_tiempo("Saludo Hola Mundo")
 
 # 2. Tarea principal: Imprimir el saludo
-print("Hola, Mundo!")
+print("Hola, Mundo 2.0!")
+print("Con delay adicional para demostrar el cronómetro de 1.5 segundos...")
 
 # 3. Simular trabajo adicional (ej. procesamiento, espera de red)
 time.sleep(1.5)

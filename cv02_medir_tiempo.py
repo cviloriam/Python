@@ -1,6 +1,6 @@
 """
 Módulo: 
-    medidor_tiempo.py
+    cv02_medir_tiempo.py
 Descripción:
     Una utilidad de script simple para medir el tiempo de ejecución de tareas.
     Proporciona una función stateful (con estado) `medir_tiempo()` que actúa
