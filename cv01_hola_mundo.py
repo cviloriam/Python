@@ -16,7 +16,11 @@ Repositorio:
 
 # La función print() muestra texto en la consola/terminal
 # En este caso, imprime el mensaje "Hola, Mundo!"
+print("(V)\n" + "-" * 50)
 print("Hola, Mundo 1.0!")
+print("Programa simple que imprime un saludo en español")
+print("Este es el clásico Hello, World! pero en español")
+print("-" * 50 + "\n(V)")
 
 # Salida esperada:
 # Hola, Mundo!
