@@ -14,7 +14,7 @@ Este repositorio recopila una serie de programas y ejercicios creados durante el
 Cada archivo representa una lección o componente de aprendizaje, documentado con **buenas prácticas**, comentarios claros y metadatos profesionales.  
 El objetivo es aprender a programar de forma organizada, limpia y con visión de desarrollador profesional.
 
----
+Este repositorio recopila una serie de programas y ejercicios creados durante el proceso de aprendizaje de Python, avanzando progresivamente desde los **fundamentos básicos** hasta la **construcción de utilidades prácticas y modulares**.
 
 ## 📁 Estructura del Proyecto
 ```text
