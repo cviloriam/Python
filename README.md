@@ -79,7 +79,7 @@ Ejecuta desde la terminal o consola de VS Code:
 #Systems #Engineer #Software #Developer #Learning #Bitcoin #Blockchain #Technology #Information
 
 ## 🔗 Links
-[Click](https://linktr.ee/cviloriam)
+[Links](https://linktr.ee/cviloriam)
 
 ## 🛠 Skills
 Javascript, HTML, CSS, .Net, Oracle, SqlServer...
