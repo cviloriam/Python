@@ -1,4 +1,4 @@
-# 🐍 Proyecto Python Programming (V)
+# 🐍 Python Programming (V)
 — Colección de Scripts y Ejercicios de Aprendizaje
 
 **Autor:** Carlos Antonio Viloria Madera  
@@ -50,7 +50,9 @@ Este repositorio recopila una serie de programas y ejercicios creados durante el
 ## 🧰 Requisitos
 - Python 3.9 o superior
 - Librería **tzdata** para manejo de zonas horarias.
-
+```bash
+  pip install tzdata
+```
 ---
 
 ## 🚀 Cómo ejecutar los programas
@@ -78,8 +80,8 @@ Ejecuta desde la terminal o consola de VS Code:
 ## 🚀 Acerca de mi
 #Systems #Engineer #Software #Developer #Learning #Bitcoin #Blockchain #Technology #Information
 
-## 🔗 Links
-[Links](https://linktr.ee/cviloriam)
+## 🔗 Links 
+🖱️[Links](https://linktr.ee/cviloriam)📌
 
 ## 🛠 Skills
 Javascript, HTML, CSS, .Net, Oracle, SqlServer...
