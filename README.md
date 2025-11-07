@@ -1,56 +1,78 @@
-# Utilidad de Medición de Tiempo en Python
+# 🐍 Proyecto Python Programming (V) — Colección de Scripts y Ejercicios de Aprendizaje
 
-Este repositorio contiene scripts de utilidad para proyectos en Python. La herramienta principal es `medir_tiempo.py`, un módulo simple para cronometrar la ejecución de bloques de código.
-
-## 📂 Archivos del Repositorio
-
-* **`medir_tiempo.py`**: El módulo principal. Contiene la función `medir_tiempo()` que actúa como un cronómetro.
-* **`hola_mundo_v2.py`**: Un script de ejemplo que demuestra cómo importar y usar `medir_tiempo()`.
+**Autor:** Carlos Antonio Viloria Madera  
+**Versión:** 1.0.0  
+**Fecha:** Noviembre 2025  
+**Repositorio:** [GitHub - cviloriam/Python](https://github.com/cviloriam/Python)
 
 ---
 
-## ⚡ Características de `medir_tiempo`
+## 📘 Descripción General
 
-La función `medir_tiempo()` es un cronómetro "stateful" (con estado) que facilita la medición del rendimiento:
+Este repositorio recopila una serie de programas y ejercicios creados durante el proceso de aprendizaje de Python, avanzando progresivamente desde los **fundamentos básicos** hasta la **construcción de utilidades prácticas y modulares**.
 
-* **Fácil de Usar**: Llama a la función una vez para iniciar el cronómetro y otra vez (con la misma clave) para detenerlo.
-* **Múltiples Tareas**: Puede manejar múltiples cronómetros en paralelo usando diferentes `clave_tarea`.
-* **Consciente de la Zona Horaria**: Muestra la hora local del servidor y la hora de Bogotá (`America/Bogota`) para un mejor contexto en los *logs*.
-* **Reporte Claro**: Calcula la duración total y la presenta en un formato legible (minutos y segundos).
+Cada archivo representa una lección o componente de aprendizaje, documentado con **buenas prácticas**, comentarios claros y metadatos profesionales.  
+El objetivo es aprender a programar de forma organizada, limpia y con visión de desarrollador profesional.
 
 ---
 
-## 🛠️ Requisitos e Instalación
+## 📁 Estructura del Proyecto
 
-1.  **Python**: Se requiere **Python 3.9** o superior (debido al uso del módulo `zoneinfo`).
-2.  **Dependencia `tzdata`**: El módulo `zoneinfo` necesita la base de datos de zonas horarias. Debes instalarla usando pip:
-
-    ```bash
-    pip install tzdata
-    ```
-
-3.  **Módulo Local**: Asegúrate de que el archivo `medir_tiempo.py` esté en la misma carpeta que el script que lo va a importar.
+📦 Python/
+ ┣ 📄 cv00_comandos_git.txt           → Guía práctica del flujo de trabajo con Git y GitHub.
+ ┣ 📄 cv01_hola_mundo.py              → Primer programa que imprime un saludo básico en español.
+ ┣ 📄 cv02_medir_tiempo.py            → Módulo para medir duración de tareas con hora local y de Bogotá.
+ ┣ 📄 cv03_hola_mundo_v2.py           → Demostración de uso del módulo medir_tiempo dentro de un script.
+ ┣ 📄 cv04_timestamp_converter.py     → Conversor de timestamps (en desarrollo) de segundos a fechas y viceversa.
+ ┣ 📄 cv05_variables_tiposdedatos.py  → Ejercicios sobre variables, tipos de datos, operadores y entradas por teclado.
+ ┣ 📄 README.md                       → Documentación completa del proyecto.
+ ┣ 📄 .gitignore                      → Configuración para excluir archivos innecesarios del repositorio.
 
 ---
 
-## 🚀 Cómo Usar
+## 🧠 Buenas Prácticas Utilizadas en el Proyecto
 
-Simplemente importa la función y "envuelve" el bloque de código que deseas medir con las llamadas de inicio y fin.
+✅ Docstrings con metadatos en los scripts principales.
+✅ Comentarios explicativos en cada ejercicio.
+✅ Separación por archivos con responsabilidades claras.
+✅ Uso de módulos e imports (cv02_medir_tiempo en cv03_hola_mundo_v2).
+✅ Control de versiones con Git documentado en cv00_comandos_git.txt.
+✅ Archivo .gitignore adaptado a proyectos Python.
+✅ Documentación centralizada en README.md.
 
-```python
-from medir_tiempo import medir_tiempo
-import time
+---
 
-print("Iniciando un proceso largo...")
+## 🧰 Requisitos
 
-# 1. Inicia el cronómetro para "Proceso_Largo"
-medir_tiempo("Proceso_Largo")
+Python 3.9 o superior
+Librería tzdata para manejo de zonas horarias:
 
-# --- Tu código a medir ---
-time.sleep(1.5) # Simulación de una tarea
-print("...trabajo intermedio...")
-time.sleep(1.0) # Más simulación
-# --- Fin de tu código ---
+---
 
-# 2. Detiene el cronómetro para "Proceso_Largo"
-medir_tiempo("Proceso_Largo")
+## 🚀 Cómo ejecutar los programas
+
+Ejecuta desde la terminal o consola de VS Code:
+python cv01_hola_mundo.py
+python cv02_medir_tiempo.py
+python cv03_hola_mundo_v2.py
+python cv04_timestamp_converter.py
+python cv05_variables_tiposdedatos.py
+
+⚠️ Nota:
+El archivo cv05_variables_tiposdedatos.py utiliza input(), por lo que requerirá interacción del usuario en la consola.
+
+---
+
+## 📆 Próximos pasos sugeridos
+
+Completar la lógica de cv04_timestamp_converter.py
+Añadir nuevos ejercicios del 6 al 10 en cv05_variables_tiposdedatos.py - fecha estimada: 8-oct-25
+Incorporar type hints y la función main() en los scripts
+Crear pruebas unitarias simples con pytest
+Publicar ejemplos como snippets educativos en GitHub o redes técnicas
+
+---
+
+“Cada día una nueva versión, cada encuentro un release.”
+“C – Compartir | A – Aprender | V – Versionar | M – Mejorar”
+— Carlos Antonio Viloria Madera
