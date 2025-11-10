@@ -71,8 +71,8 @@ Ejecuta desde la terminal o consola de VS Code:
 
 ## 📆 Próximos pasos sugeridos
 
-- Completar la lógica de `cv04_timestamp_converter.py`
-- Añadir nuevos ejercicios del 6 al 10 en `cv05_variables_tiposdedatos.py` - fecha estimada: 8-oct-25
+- Completar la lógica de `cv04_timestamp_converter.py` - fecha estimada: 11-nov-25
+- Añadir nuevos ejercicios del 6 al 10 en `cv05_variables_tiposdedatos.py` - fecha estimada: 12-nov-25
 - Incorporar type hints y la función `main()` en los scripts
 - Crear pruebas unitarias simples con **pytest**
 - Publicar ejemplos como snippets educativos en GitHub o redes técnicas

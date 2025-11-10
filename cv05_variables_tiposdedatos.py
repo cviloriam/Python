@@ -11,7 +11,7 @@ Conceptos:
 """
 
 print(".......................................................")
-print("Ejercicio 1: Primera Variable")
+print("Ejercicio 1: Primera Variable / Dificultad : ⭐ Fácil / Tiempo: 5 minutos") 
 print("...")
 
 # Solución
@@ -19,6 +19,7 @@ nombre = "Carlos"
 edad = 41
 print(f"Me llamo {nombre} y tengo {edad} años")
 
+print("...")
 # Explicación:
 # - Las comillas indican que es un string (texto)
 # - Los números sin comillas son integers (enteros)
@@ -39,7 +40,7 @@ Imprimir cada una con su tipo usando type()
 """
 
 print(".......................................................")
-print("Ejercicio 2: Tipos de Datos")
+print("Ejercicio 2: Tipos de Datos / Dificultad : ⭐ Fácil / Tiempo: 10 minutos") 
 print("...")
 
 # Solución
@@ -55,6 +56,7 @@ print(f"{decimal} es tipo: {type(decimal)}")
 print(f"{booleano} es tipo: {type(booleano)}")
 print(f"{lista} es tipo: {type(lista)}")
 
+print("...")
 # Explicación:
 # type() retorna el tipo de dato de una variable
 # Python tiene tipado dinámico: la variable se adapta al valor asignado
@@ -74,7 +76,7 @@ Crear dos variables (num1 y num2) y realizar:
 """
 
 print(".......................................................")
-print("Ejercicio 3: Operaciones Matemáticas Básicas")
+print("Ejercicio 3: Operaciones Matemáticas Básicas / Dificultad : ⭐ Fácil / Tiempo: 10 minutos") 
 print("...")
 
 # Solución
@@ -97,6 +99,7 @@ print(f"División entera: {division_entera}")
 print(f"Módulo: {modulo}")
 print(f"Potencia: {potencia}")
 
+print("...")
 # Explicación:
 # // devuelve solo la parte entera de la división
 # % devuelve el resto (útil para saber si es par/impar)
@@ -115,7 +118,7 @@ Convertir entre diferentes tipos de datos:
 """
 
 print(".......................................................")
-print("Ejercicio 4: Conversión de Tipos")
+print("Ejercicio 4: Conversión de Tipos / Dificultad : ⭐ Fácil / Tiempo: 10 minutos") 
 print("...")
 
 # Solución
@@ -138,6 +141,7 @@ print(f"'{numero}' convertido a string: {a_string}")
 print(f"'{decimal}' convertido a int: {float_a_int}")
 print(f"'{verdadero}' convertido a int: {bool_a_int}")
 
+print("...")
 # Explicación:
 # int() trunca decimales (no redondea)
 # str() convierte cualquier cosa a texto
@@ -146,7 +150,7 @@ print(f"'{verdadero}' convertido a int: {bool_a_int}")
 
 """
 -----------------------------------------------------------------------------------------------------
-5: Input del Usuario
+Ejercicio 5: Input del Usuario
 
 Pedir al usuario:
 - Su nombre
@@ -157,7 +161,7 @@ Imprimir un mensaje personalizado con toda la info.
 """
 
 print(".......................................................")
-print("5: Input del Usuario")
+print("Ejercicio 5: Input del Usuario / Dificultad : ⭐ Fácil / Tiempo: 10 minutos")
 print("...")
 
 # Solución
@@ -171,7 +175,48 @@ print(f"Edad: {edad}")
 print(f"Altura: {altura}")
 print(f"\nHola {nombre}, tienes {edad} años y mides {altura}m")
 
+print("...")
 # Explicación:
 # input() SIEMPRE retorna un string
 # Debes convertir con int() o float() si necesitas números
 # \n es un salto de línea
+
+"""
+-----------------------------------------------------------------------------------------------------
+Ejercicio 6: Calculadora Simple
+
+Crear una calculadora que:
+1. Pida dos números al usuario
+2. Muestre todas las operaciones básicas
+3. Maneje división por cero
+"""
+
+print(".......................................................")
+print("Ejercicio 6: Calculadora Simple / Dificultad : ⭐⭐ Medio / Tiempo: 15 minutos")
+print("...")
+
+# Solución
+print("=== CALCULADORA SIMPLE ===")
+
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+print(f"\n{num1} + {num2} = {num1 + num2}")
+print(f"{num1} - {num2} = {num1 - num2}")
+print(f"{num1} * {num2} = {num1 * num2}")
+
+# Manejo de división por cero
+if num2 != 0:
+    print(f"{num1} / {num2} = {num1 / num2}")
+    print(f"{num1} // {num2} = {num1 // num2}")
+    print(f"{num1} % {num2} = {num1 % num2}")
+else:
+    print(f"{num1} / {num2} = Error: División por cero")
+    print(f"{num1} // {num2} = Error: División por cero")
+    print(f"{num1} % {num2} = Error: División por cero")
+
+print("...")
+# Explicación:
+# float() permite decimales en la entrada
+# if verifica condición antes de dividir
+# != significa "diferente de"
